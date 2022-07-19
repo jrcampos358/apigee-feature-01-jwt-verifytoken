@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-JWT-Token">
+    <DisplayName>EV-JWT-Token</DisplayName>
+    <Source>request</Source>
+    <Header name="Authorization">
+        <Pattern ignoreCase="false">Bearer {jwt}</Pattern>
+    </Header>
+    <VariablePrefix>authn</VariablePrefix>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

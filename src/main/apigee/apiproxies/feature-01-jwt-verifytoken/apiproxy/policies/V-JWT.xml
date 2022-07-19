@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VerifyJWT continueOnError="false" enabled="true" name="V-JWT">
+    <Algorithm>RS256</Algorithm>
+    <Source>authn.jwt</Source>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <PublicKey>
+        <JWKS uri="https://login.microsoftonline.com/common/discovery/v2.0/keys"/>
+    </PublicKey>
+    <Audience>63fccefe-f663-4c38-af1e-00f493ded29f</Audience>
+</VerifyJWT>
